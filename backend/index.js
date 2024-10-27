@@ -7,7 +7,7 @@ const app = express()
 
 
 app.use(express.json())
-
+/*
 app.use(cors())
 
 
@@ -16,7 +16,7 @@ const corsOptions = {
   optionsSuccessStatus: 200
 };
 
-app.use(cors(corsOptions));
+app.use(cors(corsOptions));*/
 
 
 
