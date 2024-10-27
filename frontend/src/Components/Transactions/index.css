@@ -1,0 +1,96 @@
+.transaction-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #aac2e7;
+    min-height: 100%;
+    width: 100%;
+    padding: 10px;
+    
+
+}
+.heading-container{
+    margin-top: 20px;
+    align-self: center;
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+.top-heading{
+    font-family: "roboto";
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+.input-container{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    margin: 20px;
+    outline: none;
+    
+}
+.flex-row{
+    display: flex;
+    align-items: center;
+    background-color:#ffb833;
+    height: 20px;
+}
+.select-month{
+    color: #000000;
+    font-family: "roboto";
+    font-weight: 400;
+    font-size: 12px;
+    padding: 10px;
+}
+.select-input{
+    background-color:#ffffff;
+    height: 21px;
+    outline: none;
+    border: none;
+}
+.table-container{
+    width: 100vw;
+    padding: 0;
+    margin-top: 20px;
+}
+.row{
+    background-color: #ffb833;
+    color: #000000;
+    border: none;
+    padding: 0px;
+    margin: 0;
+    font-size: 10px;
+    font-family: "roboto";
+    width: 100%;
+   
+}
+.item{
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-right: 1px solid #000000;
+    width: 10vw;
+    flex-wrap: wrap;
+    overflow: auto;
+    height:100px;
+    width:100px;
+}
+.page-row-container{
+    display: flex;
+    align-items: center;
+    margin-top:20px;
+    justify-content: space-around;
+}
+.btn{
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}

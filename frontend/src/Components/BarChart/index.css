@@ -1,0 +1,21 @@
+.barchart-container{
+    background-color: transparent;
+    margin-top: 20px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+    font-family: "roboto";
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+
+}
+.span{
+    font-family: "roboto";
+    font-size: 12px;
+    font-weight: 300;
+
+}
