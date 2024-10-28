@@ -4,7 +4,9 @@ import Transactions from "./Components/Transactions"
 
 function App() {
   return (
+    <div>
     <Transactions/>
+    </div>
   )
 }
 

@@ -1,6 +1,6 @@
 
 import { useState,useEffect } from "react"
-import axios from "axios"
+//import axios from "axios"
 
 import "./index.css"
 
@@ -12,10 +12,13 @@ const Statistics = props =>{
     const [data,setData] = useState([])
     useEffect(()=>{
         const getData = async()=>{
-            const response = await axios.get(`http://localhost:4000/statistics?month=${month}`)
-            const {data} = await response
-            const {not_sold_items,sold_items,total_sales} = data 
-            const notSoldItems = not_sold_items
+            const response = await fetch(`https://roxiler-backend-t5wg.onrender.com/statistics?month=${month}`)
+            const responseData = await response.json()
+            console.log(responseData)
+            
+            
+            const {unsold_items,sold_items,total_sales} = responseData 
+            const notSoldItems = unsold_items
             const soldItems = sold_items
             const totalItems = total_sales
             setData({notSoldItems,soldItems,totalItems})

@@ -1,5 +1,5 @@
 import { useState,useEffect } from "react"
-import axios from "axios"
+//import axios from "axios"
 import { Bar } from 'react-chartjs-2';
 import {Chart,LinearScale,CategoryScale,BarElement} from "chart.js"
 
@@ -17,9 +17,6 @@ const Barchart = props =>{
 
     const [data,setData] = useState([])
 
-    const valuesArr = []
-
-    console.log(Object.values(data))
     const values = Object.values(data)
     
     
@@ -41,9 +38,10 @@ const Barchart = props =>{
     
     useEffect(()=>{
     const getApiData = async()=>{
-        const response = await axios.get(`http://localhost:4000/barchart/${month}`)
-        const {data} = await response 
-        setData(data)
+        const response = await fetch(`https://roxiler-backend-t5wg.onrender.com/barchart/${month}`)
+        const responseData = await response.json()
+       
+        setData(responseData)
        
 
     }
