@@ -1,4 +1,3 @@
-
 import { useState,useEffect } from "react"
 //import axios from "axios"
 
@@ -12,9 +11,9 @@ const Statistics = props =>{
     const [data,setData] = useState([])
     useEffect(()=>{
         const getData = async()=>{
-            const response = await fetch(`https://roxiler-backend-t5wg.onrender.com/statistics?month=${month}`)
+            const response = await fetch(`https://roxiler-backend-kf36.onrender.com/statistics?month=${month}`)
             const responseData = await response.json()
-            console.log(responseData)
+            
             
             
             const {unsold_items,sold_items,total_sales} = responseData 

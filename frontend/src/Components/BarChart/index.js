@@ -38,7 +38,7 @@ const Barchart = props =>{
     
     useEffect(()=>{
     const getApiData = async()=>{
-        const response = await fetch(`https://roxiler-backend-t5wg.onrender.com/barchart/${month}`)
+        const response = await fetch(`https://roxiler-backend-kf36.onrender.com/barchart/${month}`)
         const responseData = await response.json()
        
         setData(responseData)

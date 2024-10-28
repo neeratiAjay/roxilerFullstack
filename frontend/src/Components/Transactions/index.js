@@ -93,7 +93,7 @@ const Transactions = ()=>{
 
     useEffect(()=>{
     const getFetchData = async ()=>{
-        const response = await fetch(`https://roxiler-backend-t5wg.onrender.com/transactions?page=${page}&search=${searchInput}`)
+        const response = await fetch(`https://roxiler-backend-kf36.onrender.com/transactions?page=${page}&search=${searchInput}`)
         const data = await response.json()
         setData(data)
         setPage(1)
@@ -172,49 +172,3 @@ const Transactions = ()=>{
 
 }
 export default Transactions
-/*
- <Statistics month = {monthValue} monthName = {months[month].displayText}/>
-      <BarChart month = {monthValue} monthName = {months[month].displayText}/>
-*/
-
- /*
-      <div className="input-container">
-      <input type = "search" placeholder = "Search Transaction" value={searchInput} onChange={changeSearchInput}/>
-      <div className="flex-row">
-        <p className="select-month">Select month</p>
-        <div>
-      <select className="select-input" value={month} onChange = {changeMonth}>
-      {months.map(eachObj=>(
-        <option  key = {eachObj.id} value = {eachObj.month}>{eachObj.displayText}</option>
-      ))}
-      </select>
-      </div>
-      </div>
-      </div>
-      <table className="table-container">
-      <thead>
-       <tr className="row">
-        <th className="item ">ID</th>
-        <th className="item">Title</th>
-        <th className="item">Description</th>
-        <th className="item">Price</th>
-        <th className="item">category</th>
-        <th className="item">Sold</th>
-        <th className="item">Image</th>
-        <th className="item">Year</th>
-       </tr>
-       </thead>
-       <tbody>
-       {data.map(eachObject=>tableFormat(eachObject))}
-       </tbody>
-      </table>
-
-      <div className="page-row-container">
-      <p>Page No: {page}</p>
-      <div className="page-row-container">
-      <button type = "button" className="btn" onClick = {pageIncrement}>Next </button>
-      <button type = "button" className="btn" onClick = {pageDecrement}>Previous</button>
-      </div>
-      <p>Per Page:10</p>
-      </div>
-      */
