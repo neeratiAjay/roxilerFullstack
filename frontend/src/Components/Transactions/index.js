@@ -96,7 +96,7 @@ const Transactions = ()=>{
         const response = await fetch(`https://roxiler-backend-kf36.onrender.com/transactions?page=${page}&search=${searchInput}`)
         const data = await response.json()
         setData(data)
-        setPage(1)
+        
         
     }
     getFetchData()
